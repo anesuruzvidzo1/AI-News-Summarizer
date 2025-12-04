@@ -1,3 +1,4 @@
+
 import re
 from pymongo import MongoClient
 import spacy
@@ -9,7 +10,7 @@ from spacy.lang.en.stop_words import STOP_WORDS
 client = MongoClient("mongodb://localhost:27017/")
 db = client["news_db"]
 
-raw_collection = db["raw_articles"]
+raw_collection = db["news_raw"]
 processed_collection = db["processed_articles"]
 
 # SpaCy NLP model
